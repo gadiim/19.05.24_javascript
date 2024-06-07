@@ -1,0 +1,240 @@
+* {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: tomato;
+  }
+  
+.top-screen {
+    display: flex;
+    background-color: white;
+    height: 50vh;
+    min-width: 100vw;
+    position: absolute;
+    top: 0;
+    z-index: -10;
+  }  
+
+footer {
+  color: white;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-size: small;
+  text-align: center;
+}
+
+.carousel-container {
+    position: relative;
+    width: 70%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.carousel {
+
+    display: flex;
+    transition: transform 0.7s ease;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    font-size: x-large;
+    color: white;
+    filter: opacity(.1);
+    /* border: none; */
+    padding: 50px 10px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.carousel-button:hover {
+    filter: opacity(.5);
+}
+
+.carousel-button.left {
+    left: 0;
+}
+
+.carousel-button.right {
+    right: 0;
+}
+
+.cards-title {
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    color: tomato;
+}
+
+ul {
+    list-style: none;
+}
+  
+.cards-list {
+  display: flex;
+    /* flex-flow: row wrap; */
+  justify-content: space-around;
+  padding: 20px;
+}
+  
+li {
+  margin: 20px;
+}
+  
+ .card-container {
+  position: relative;
+  min-width: 275px;
+  height: 100%;
+  padding: 12px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px darkgrey;
+}
+
+ .card-container:hover {
+  box-shadow: 0 8px 18px grey;
+}
+  
+.card-photo {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  padding: 4px;
+  border: solid 4px tomato;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.card-photo:hover {
+  padding: 2px;
+  border: solid 7px tomato;
+  box-shadow: 0 4px 8px grey;
+}
+  
+.user-logo {
+  /* background-image: url('img/user-circle.svg'); */
+  background-size: cover;
+}
+
+.card-fullname {
+  margin: 16px;
+}
+
+.card-contacts {
+  padding: 0;
+  position: absolute;
+  bottom: 6px;
+  left: 0;
+  right: 0;
+    
+}
+.social-button {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin: 0 10px;
+  box-shadow: 0 2px 6px darkgrey;
+}
+
+.social-button:hover {
+  box-shadow: 0 4px 8px grey;
+}
+
+.facebook-logo {
+  background-image: url('img/facebook-circle.svg');
+  background-size: cover;
+}
+
+.twitter-logo {
+  background-image: url('img/twitter-circle.svg');
+  background-size: cover;
+}
+
+.instagram-logo {
+    background-image: url('img/instagram-circle.svg');
+    background-size: cover;
+}
+
+.list-container {
+  height: 100px;
+  background-color: white;
+  position: relative;
+  width: 50%;
+  padding: 3px;
+  margin: auto;
+  overflow: auto;
+  scrollbar-color: rgb(230, 232, 235) white;
+  scrollbar-width:none;
+  border-radius: 5px;
+  border: solid 1px;
+  border-color: gray;
+}
+  
+.record-list{  
+  margin: 0px 15px;
+}
+
+.record-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 2px;
+  padding: 5px;
+  font-size: x-large;
+}
+
+.record-container:hover {
+  background-color: rgb(230, 232, 235);
+  border-radius: 5px;
+}
+
+.record-photo {
+  width: 30px;
+  height: 30px;
+  object-fit: cover;
+  padding: 1px;
+  border: solid 1px tomato;
+  border-radius: 50%;
+}
+  
+.record {
+  /* float: left; */
+  margin-left: 15px;  
+}
+
+.delete-button {
+  float: right;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  background-color: tomato;
+  border-color: rgb(230, 232, 235);
+  /* border-radius: 5px; */
+  color: white;
+  filter: opacity(.1);
+  padding: 0px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.delete-button:hover {
+    filter: opacity(.6);
+}
+
+#choosedTitle {
+  font-size: 50px;
+  font-weight: 700;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  padding: 20px;
+  color: tomato;
+}
